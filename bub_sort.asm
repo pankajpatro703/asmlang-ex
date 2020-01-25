@@ -1,4 +1,4 @@
-;Ascending order
+;Ascending order on 8086
 .MODEL SMALL
 .STACK 100
 
@@ -7,7 +7,7 @@ array DB 43H, 12H, 07H, 36H, 11H
 arrsize DB 05H
 
 .CODE
-start:  MOV AX,@DATA
+Start:  MOV AX,@DATA
         MOV DS,AX
         MOV CH,arrsize
         DEC CH
@@ -26,5 +26,5 @@ star:   INC SI
         JNZ up
         MOV AH,4CH
         INT 21H
-        END START
+        END Start
         END
