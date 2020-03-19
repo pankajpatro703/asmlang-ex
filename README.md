@@ -1,2 +1,2 @@
-# uP808x
-Repository for assembly programs on uP8085 and uP8086.
+# uP-assembly
+Repository for assembly programs on microprocessors.
