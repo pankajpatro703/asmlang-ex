@@ -1,21 +1,21 @@
 # uProcessing
 All microprocessor and microcontroller level computational codes in assembly and C.
 
-# Processors
+* Processors
 Extensions:     
     .asm       
 
-# MCS-51
+* MCS-51
 Extensions:        
     .a51    
     
-# AVR 
+* AVR 
 Extensions:         
     .Savr8    
     .Savr16    
     .Savr32        
 
-# PIC
+* PIC
 Extensions:         
     .Spic12    
     .Spic14    
@@ -24,7 +24,7 @@ Extensions:
     .Spic24    
     .Spic32        
 
-# ARM
+* ARM
 Extensions:        
     .a4t (7TDMI, 9TDMI)    
     .a6m (M0, M0+, M1)    
