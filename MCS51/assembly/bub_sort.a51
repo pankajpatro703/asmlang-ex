@@ -19,7 +19,7 @@ up:     MOVX A,@DPTR
         MOVX @DPTR,A            
         DEC DPL                 
         MOV A,R0                
-        MOVX @DPTR,A            ;exchange the elements
+        MOVX @DPTR,A            ;exchange the elements if arr[i]>arr[i+1]
         INC DPTR                ;point back to default
 skip:   DJNZ R1,up              ;m=m-1, skip if 0
         DJNZ R3,again           ;n=n-1, skip if 0

@@ -3,15 +3,15 @@
 .STACK 100
 
 .DATA
-array DB 01H,23H,65H,2FH,3DH    ;data block   
-arrsize DB 05H                  ;size of block
+array	DB 01H,23H,65H,2FH,3DH  ;data block
+arrsize	DB 05H                  ;size of block
 
 .CODE
 START:  mov ax,@DATA
         mov ds,ax
 
         mov ax,3000h
-        mov es,ax           
+        mov es,ax
 
         lea si, array           ;index(i) points to start of data array
         mov di,0000h            ;index(j) points to start of extra segment

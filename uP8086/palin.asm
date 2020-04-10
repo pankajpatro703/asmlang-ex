@@ -5,9 +5,9 @@
 .DATA
 prompt1 DB "Enter size: $"      ;prompt message for size of string
 prompt2 DB "Enter string: $"    ;prompt message to obtain string
-m1 DB "Not Palindrome$"         ;result message if not palindrome
-m2 DB "Palindrome$"             ;result message if palindrome
-array DB ?                      ;memory to store string
+m1 	DB "Not Palindrome$"    ;result message if not palindrome
+m2 	DB "Palindrome$"        ;result message if palindrome
+array 	DB ?                    ;memory to store string
 
 .CODE
 START:  mov ax,@DATA
@@ -21,7 +21,7 @@ START:  mov ax,@DATA
         int 21h                 ;get size
 
         sub al,30h
-        inc al		
+        inc al
         mov cl,al               ;convert from ascii to size(n)
 
         mov ah,02h
@@ -52,13 +52,13 @@ START:  mov ax,@DATA
 UP:     mov al,array[si]
         mov ah,array[di]
         cmp si,di               ;compare i with n-i
-        jns OUTP                
+        jns OUTP
         inc si                  ;i=i+1
-        dec di                  
+        dec di
         cmp al,ah               ;compare arr[i] and arr[n-i]
         jz UP                   ;repeat if arr[i]==arr[n-i]
 
-        mov ah,09h              ;if any arr[i]!=arr[n-i] 
+        mov ah,09h              ;if any arr[i]!=arr[n-i]
         mov dx,OFFSET m1
         int 21h                 ;display "Not Palindrome"
 
