@@ -3,8 +3,8 @@
 .STACK 100
 
 .DATA
-array 	DB 43H, 12H, 07H, 36H, 11H	;elements in array(arr)
-arrsize DB 05H				;size(n) of array(arr)
+array 	DB 43H, 12H, 07H, 36H, 11H      ;elements in array(arr)
+arrsize DB 05H		                ;size(n) of array(arr)
 
 .CODE
 START:  mov ax,@DATA
