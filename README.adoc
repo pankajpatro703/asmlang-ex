@@ -1,0 +1,46 @@
+# asmlang-ex    
+All microprocessor and microcontroller level computational codes in assembly and C.    
+
+[cols="^.^,^.^,3a"]
+|===
+|Sr. No. |Processor |Extensions
+
+|1 |8085 |`.asm`
+|2 |8086 |`.asm`
+|3 |MCS51 |`.a51`
+|4 |AVR |Core Family
+[cols="7,5"]
+!===
+!AVR1 !`.Sv1`
+!AVR2 !`.Sv2`
+!AVR2.5 !`.Sv25`
+!AVR3 !`.Sv3`
+!AVR4 !`.Sv4`
+!AVR5.1 !`.Sv51`
+!AVR6 !`.Sv6`
+!avrxmega !`.Svx`
+!avrtiny10 !`.Svt`
+!AP7 !`.Sva`
+!UC3 !`.Svu`
+!===
+|5 |PIC |Core Family
+[cols="7,6"]
+!===
+!PIC10 !`.S10`
+!PIC12 !`.S12`
+!PIC16 !`.S16`
+!PIC18 !`.S18`
+!PIC24 !`.S24`
+!dsPIC !`.Sds`
+!PIC32 !`.S32`
+!===
+|6 |ARM |Core Family
+[cols="5,3"]
+!===
+!(7TDMI, 9TDMI) !`.a4t`
+!(M0, M0+, M1) !`.a6m`
+!(M3) !`.a7m`
+!(M4, M7) !`.a7em`
+!(M23, M33) !`.a8m`
+!===
+|===
